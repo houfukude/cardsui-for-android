@@ -10,7 +10,7 @@ import android.util.Log;
  * serializable model.
  * 
  * <p>
- * Note that any similarities to Card Factory Ltd
+ * Note that any similarities to Supports.Card Factory Ltd
  * <http://www.cardfactory.eu.com/> are purely accidental.
  * 
  * @author FLamparski

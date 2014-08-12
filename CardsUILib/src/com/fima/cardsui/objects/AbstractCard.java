@@ -1,14 +1,16 @@
 package com.fima.cardsui.objects;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.View;
 
 public abstract class AbstractCard {
 
 	protected int image;
-	protected String description, color, titleColor, desc, title, titlePlay;
+	protected String description, color, titleColor, title, titlePlay;
 	protected Boolean hasOverflow, isClickable;
 	protected int imageRes;
+	protected Bitmap bitmap;
 	protected Object data;
 
 	public abstract View getView(Context context);
@@ -23,8 +25,11 @@ public abstract class AbstractCard {
 		return titlePlay;
 	}
 
-	public String getDesc() {
-		return desc;
+//	public String getDesc() {
+//		return desc;
+//	}
+	public Bitmap getBitmap() {
+		return bitmap;
 	}
 
 	public String getDescription() {

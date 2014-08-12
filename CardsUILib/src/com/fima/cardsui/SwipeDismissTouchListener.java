@@ -163,7 +163,12 @@ public class SwipeDismissTouchListener implements View.OnTouchListener {
 				dismissRight = deltaX > 0;
 			} else if (mMinFlingVelocity <= velocityX
 					&& velocityX <= mMaxFlingVelocity && velocityY < velocityX) {
-				dismiss = true;
+				/**
+				 * dismiss = true;
+				 *this may dismiss the card by mistake
+				 * @author houfukude
+				 */
+				dismiss = false;
 				dismissRight = mVelocityTracker.getXVelocity() > 0;
 			}
 			if (dismiss) {

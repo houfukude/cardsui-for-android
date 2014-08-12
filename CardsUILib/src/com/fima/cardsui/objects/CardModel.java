@@ -9,7 +9,7 @@ import java.io.Serializable;
  * about cards across configuration changes, or even saved to USB storage.
  * 
  * <p>
- * To turn a {@link CardModel} into a Card, use {@link CardFactory}.
+ * To turn a {@link CardModel} into a Supports.Card, use {@link CardFactory}.
  * 
  * @author FLamparski
  * @see {@link AbstractCard}, {@link CardFactory}
